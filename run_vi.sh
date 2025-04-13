@@ -19,6 +19,6 @@ fi
 echo -e "${GREEN}Bắt đầu khai thác ngay...${NC}"
 # exec bitz -h
 
-solana config set --url https://mainnetbeta-rpc.eclipse.xyz/
+solana config set --url https://eclipse.helius-rpc.com
 
 bitz collect --cores 8
