@@ -1,0 +1,11 @@
+services:
+  epow-miner:
+    image: hiepht/eclise:epow-miner-0.0.5
+    container_name: epow-miner
+    privileged: true
+    volumes:
+      - ./keys:/keys
+      - ./run_vi.sh:/run_vi.sh  # <--- Mount trực tiếp file setup
+      - /root/epow/epow-keys/solana:/root/.config/solana
+    restart: unless-stopped
+    tty: true
