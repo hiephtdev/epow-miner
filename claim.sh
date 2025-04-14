@@ -1,2 +1,2 @@
 #!/bin/bash
-docker exec epow-miner bitz claim
+docker exec -i epow-miner bash -c "echo y | bitz claim"
